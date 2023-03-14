@@ -11,7 +11,7 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  background-color: #cfcff5;
+  background: url("../../assets/img/5137894.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,17 +23,21 @@
   height: 70%;
   max-height: 80%;
   overflow: hidden;
-  background-color: #FFFFFF;
   border-radius: 1.5rem;
-  box-shadow: 0px 6px 9px 2px rgba(237,221,238,1);
+  backdrop-filter: blur(0px) saturate(143%);
+  -webkit-backdrop-filter: blur(0px) saturate(143%);
+  background-color: rgba(193, 190, 190, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .title{
+  color: #fff;
   margin-top: 1.5rem;
   font-size: 1.5rem;
   font-family: 'Merriweather', serif;
   font-weight: bold;
   text-shadow: 1.5px 1.5px 2px rgba(0,0,0,0.3);
+  
 }
 
 .filterContainer{
@@ -51,7 +55,7 @@
 }
 
 .btnFilter{
-  background-color: #8598FC;
+  background-color: #bc00dd;
   width: 5rem;
   height: 2.5rem;
   color: #fff;
@@ -60,7 +64,7 @@
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
-  box-shadow: 0px 2px 2px 2px rgba(237,221,238,1);
+  box-shadow: 0px 1px 1px 0px rgba(237,221,238,1);
 }
 
 
@@ -108,7 +112,7 @@
 }
 
 .toggle input:checked+.slider {
-  background-color: #8598FC;
+  background-color: #29bf12 ;
 }
 
 .toggle input:checked+.slider::before {
@@ -207,6 +211,28 @@
   width: 92%;
   border-radius: 1rem;
   padding: 0.2rem 0.7rem;
+  color: #fff;
+}
+
+.pink{
+  background-color: #F20089;
+  color: #fff;
+}
+
+.blue{
+  background-color: #2176ff;
+}
+
+.yellow{
+  background-color: #fdca40;
+}
+
+.purple{
+  background-color: #d100d1;
+}
+
+.green{
+  background-color: #2dc653;
 }
 
 .data:hover{
@@ -225,19 +251,20 @@
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  color: #fff;
 }
 
 .siteName{
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .siteAddress{
   font-size: 0.8rem;
-  color: #424144;
   text-decoration: none;
+  color: #fff;
 }
 
 .contestName{
@@ -251,6 +278,7 @@
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #fff;
 }
 
 .regDeadline{

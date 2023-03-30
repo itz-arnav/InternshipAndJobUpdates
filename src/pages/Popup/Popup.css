@@ -11,7 +11,7 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  background: url("https://images.pexels.com/photos/7130543/pexels-photo-7130543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background: url("https://img.freepik.com/free-vector/realistic-polygonal-background_52683-60157.jpg?w=1060&t=st=1680189681~exp=1680190281~hmac=a608ebf0670bca354b12fc0fc98d9afaa6860eca0451ffab0572e236c573b877");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,18 +25,15 @@
   overflow: hidden;
   border-radius: 1.5rem;
   
-  background: rgba(136, 240, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(136, 240, 255, 0.3);
-  
+  background: rgba(255, 255, 255, 0.99);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .title{
-  color: #000;
+  color: #AF0A06;
   margin-top: 1.5rem;
   font-size: 1.8rem;
   font-family: 'Merriweather', serif;
@@ -64,7 +61,7 @@ border: 1px solid rgba(136, 240, 255, 0.3);
   width: 5.5rem;
   height: 2.5rem;
   padding: 0.3rem 0.6rem;
-  background-color: #8f8e8e;
+  background-color: #a4a4a4;
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
@@ -94,7 +91,7 @@ border: 1px solid rgba(136, 240, 255, 0.3);
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: #8f8e8e;
+  background-color: #a4a4a4;
   cursor: pointer;
   border: 5px;
 }
@@ -115,14 +112,14 @@ border: 1px solid rgba(136, 240, 255, 0.3);
  .scrollArea::-webkit-scrollbar-track
  {
    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-   background-color: #fff;
+   background-color: #C81C44;
    border-radius: 10px;
  }
  
  .scrollArea::-webkit-scrollbar
  {
    width: 4px;
-   background-color: #4361ee;
+   background-color: #C81C44;
  }
  
  .scrollArea::-webkit-scrollbar-thumb
@@ -132,9 +129,9 @@ border: 1px solid rgba(136, 240, 255, 0.3);
    background-image: -webkit-gradient(linear,
                       40% 0%,
                       75% 84%,
-                      from(#4361ee),
-                      to(#4361ee),
-                      color-stop(.6,#4361ee))
+                      from(#C81C44),
+                      to(#C81C44),
+                      color-stop(.6,#C81C44))
  }
 
  .dataContainer{
@@ -154,12 +151,12 @@ border: 1px solid rgba(136, 240, 255, 0.3);
   border-radius: 1rem;
   padding: 0.4rem 0.7rem;
   color: #fff;
-  background-color: #8f8e8e;
+  background-color: #a4a4a4;
 }
 
 
 .data:hover{
-  background-color: #4361ee;
+  background-color: #AF0A06;
   cursor: pointer;
 }
 
@@ -221,6 +218,6 @@ border: 1px solid rgba(136, 240, 255, 0.3);
 }
 
 .active{
-  background-color: #4361ee;
+  background-color: #AF0A06;
   transition: all 300ms ease-in-out;
 }

@@ -4,69 +4,69 @@ import './Popup.css';
 const Popup = () => {
   const [activeFilter, setActiveFilter] = useState('Internships');
   const [activeSort, setActiveSort] = useState('Today');
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
       <div className="container">
         <div className="title">Placify</div>
-        <div className="filterContainer">
-          <div className="filterArea">
-            <div
-              className={`filterButton ${
-                activeFilter === 'Internships' ? 'active' : ''
-              }`}
-              onClick={() => setActiveFilter('Internships')}
-            >
-              Internships
-            </div>
-            <div
-              className={`filterButton ${
-                activeFilter === 'Jobs' ? 'active' : ''
-              }`}
-              onClick={() => setActiveFilter('Jobs')}
-            >
-              Jobs
-            </div>
-            <div
-              className={`filterButton ${
-                activeFilter === 'Hackathons' ? 'active' : ''
-              }`}
-              onClick={() => setActiveFilter('Hackathons')}
-            >
-              Hackathons
-            </div>
-            <div
-              className={`filterButton ${
-                activeFilter === 'Contests' ? 'active' : ''
-              }`}
-              onClick={() => setActiveFilter('Contests')}
-            >
-              Contests
-            </div>
-          </div>
-        </div>
-
         <div className="sortArea">
-          <h1>Sort By:</h1>
-          <div
-            className={`sortButton ${activeSort === 'Today' ? 'active' : ''}`}
-            onClick={() => setActiveSort('Today')}
-          >
-            Today
+          <div className="filterButton" onClick={() => setIsOpen(true)}>
+            Filter
           </div>
-          <div
-            className={`sortButton ${
-              activeSort === 'Upcoming' ? 'active' : ''
-            }`}
-            onClick={() => setActiveSort('Upcoming')}
-          >
-            Upcoming
+
+          {isOpen && (
+            <div className="modal">
+              <div className="modal-content">
+                <span className="close" onClick={() => setIsOpen(false)}>
+                  &times;
+                </span>
+
+                <div className="headingModal">Filter By Category</div>
+                <div class="categories">
+                  <div class="box">Internships</div>
+                  <div class="box">Jobs</div>
+                  <div class="box">Hackathons</div>
+                  <div class="box">Coding Contests</div>
+                </div>
+                <div className="headingModal">Filter By Website</div>
+                <div class="website">
+                  <div class="box">HackerEarth</div>
+                  <div class="box">HackerRank</div>
+                  <div class="box">Unstop</div>
+                  <div class="box">GeeksForGeeks</div>
+                  <div class="box">Codechef</div>
+                  <div class="box">Codeforces</div>
+                  <div class="box">LeetCode</div>
+                  <div class="box">Atcoder</div>
+                  <div class="box">Topcoder</div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div className="sortSection">
+            <h1>Sort By:</h1>
+            <div
+              className={`sortButton ${activeSort === 'Today' ? 'active' : ''}`}
+              onClick={() => setActiveSort('Today')}
+            >
+              Today
+            </div>
+            <div
+              className={`sortButton ${
+                activeSort === 'Upcoming' ? 'active' : ''
+              }`}
+              onClick={() => setActiveSort('Upcoming')}
+            >
+              Upcoming
+            </div>
           </div>
         </div>
         <div className="scrollArea">
           <div className="dataContainer">
             {/* Mock Data */}
 
-            <div className="data active">
+            <div className="data">
               <img
                 src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png"
                 alt="HackerRank"
